@@ -1,2 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2 menu">
+            <aside>
+                <h4>
+                    Menu
+                </h4>
 
-<router-outlet></router-outlet>
+                <ul class="nav-menu">
+                    <li>
+                        <a routerLink="/rooms">
+                            Lista de Salas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a routerLink="/new">
+                            Nova Sala
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+
+        <div class="col-lg-8">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

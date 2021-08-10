@@ -1,0 +1,38 @@
+<div class="container">
+    <ng-container>
+        <h3>Join Room</h3>
+
+        <p>Enter the participant name: </p>
+        <form (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" required [(ngModel)]="participant.name" name="name">
+            </div>
+
+            <button type="submit" class="btn btn-success">
+                Submit
+            </button>
+        </form>
+    </ng-container>
+
+    <ng-container>
+
+        <div class="panel panel-default">
+            <div class="panel-header">
+                <p>
+                    List of Participants
+                </p>
+            </div>
+
+            <div class="panel-body">
+                <ul>
+                    <li *ngFor="let m of members|async">
+                        {{m.name}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </ng-container>
+
+</div>

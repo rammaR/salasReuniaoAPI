@@ -43,4 +43,8 @@ export class RoomListComponent implements OnInit {
     this.router.navigate(['update', id]);
   }
 
+  toRoomEnter(id:number){
+    this.router.navigate(['enter', id]);
+  }
+
 }

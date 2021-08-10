@@ -9,6 +9,7 @@ import { RoomListComponent } from './components/room-list/room-list.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RoomUpdateComponent } from './components/room-update/room-update.component';
 import { FormsModule } from '@angular/forms';
+import { RoomEnterComponent } from './components/room-enter/room-enter.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     CreateRoomComponent,
     RoomDetailsComponent,
     RoomListComponent,
-    RoomUpdateComponent
+    RoomUpdateComponent,
+    RoomEnterComponent
   ],
   imports: [
     BrowserModule,
